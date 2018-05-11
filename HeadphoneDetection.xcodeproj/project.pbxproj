@@ -1,0 +1,589 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2A355E1720A53AD100D36FCB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A355E1620A53AD100D36FCB /* AppDelegate.swift */; };
+		2A355E1920A53AD100D36FCB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A355E1820A53AD100D36FCB /* ViewController.swift */; };
+		2A355E1C20A53AD100D36FCB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A355E1A20A53AD100D36FCB /* Main.storyboard */; };
+		2A355E1E20A53AD300D36FCB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A355E1D20A53AD300D36FCB /* Assets.xcassets */; };
+		2A355E2120A53AD300D36FCB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A355E1F20A53AD300D36FCB /* LaunchScreen.storyboard */; };
+		2A355E2C20A53AD400D36FCB /* HeadphoneDetectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A355E2B20A53AD400D36FCB /* HeadphoneDetectionTests.swift */; };
+		2A355E3720A53AD400D36FCB /* HeadphoneDetectionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A355E3620A53AD400D36FCB /* HeadphoneDetectionUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2A355E2820A53AD400D36FCB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A355E0B20A53AD100D36FCB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2A355E1220A53AD100D36FCB;
+			remoteInfo = HeadphoneDetection;
+		};
+		2A355E3320A53AD400D36FCB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A355E0B20A53AD100D36FCB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2A355E1220A53AD100D36FCB;
+			remoteInfo = HeadphoneDetection;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2A355E1320A53AD100D36FCB /* HeadphoneDetection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeadphoneDetection.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A355E1620A53AD100D36FCB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2A355E1820A53AD100D36FCB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2A355E1B20A53AD100D36FCB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2A355E1D20A53AD300D36FCB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2A355E2020A53AD300D36FCB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2A355E2220A53AD300D36FCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A355E2720A53AD400D36FCB /* HeadphoneDetectionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HeadphoneDetectionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A355E2B20A53AD400D36FCB /* HeadphoneDetectionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadphoneDetectionTests.swift; sourceTree = "<group>"; };
+		2A355E2D20A53AD400D36FCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A355E3220A53AD400D36FCB /* HeadphoneDetectionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HeadphoneDetectionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A355E3620A53AD400D36FCB /* HeadphoneDetectionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadphoneDetectionUITests.swift; sourceTree = "<group>"; };
+		2A355E3820A53AD400D36FCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2A355E1020A53AD100D36FCB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A355E2420A53AD400D36FCB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A355E2F20A53AD400D36FCB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2A355E0A20A53AD100D36FCB = {
+			isa = PBXGroup;
+			children = (
+				2A355E1520A53AD100D36FCB /* HeadphoneDetection */,
+				2A355E2A20A53AD400D36FCB /* HeadphoneDetectionTests */,
+				2A355E3520A53AD400D36FCB /* HeadphoneDetectionUITests */,
+				2A355E1420A53AD100D36FCB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2A355E1420A53AD100D36FCB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2A355E1320A53AD100D36FCB /* HeadphoneDetection.app */,
+				2A355E2720A53AD400D36FCB /* HeadphoneDetectionTests.xctest */,
+				2A355E3220A53AD400D36FCB /* HeadphoneDetectionUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2A355E1520A53AD100D36FCB /* HeadphoneDetection */ = {
+			isa = PBXGroup;
+			children = (
+				2A355E1620A53AD100D36FCB /* AppDelegate.swift */,
+				2A355E1820A53AD100D36FCB /* ViewController.swift */,
+				2A355E1A20A53AD100D36FCB /* Main.storyboard */,
+				2A355E1D20A53AD300D36FCB /* Assets.xcassets */,
+				2A355E1F20A53AD300D36FCB /* LaunchScreen.storyboard */,
+				2A355E2220A53AD300D36FCB /* Info.plist */,
+			);
+			path = HeadphoneDetection;
+			sourceTree = "<group>";
+		};
+		2A355E2A20A53AD400D36FCB /* HeadphoneDetectionTests */ = {
+			isa = PBXGroup;
+			children = (
+				2A355E2B20A53AD400D36FCB /* HeadphoneDetectionTests.swift */,
+				2A355E2D20A53AD400D36FCB /* Info.plist */,
+			);
+			path = HeadphoneDetectionTests;
+			sourceTree = "<group>";
+		};
+		2A355E3520A53AD400D36FCB /* HeadphoneDetectionUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2A355E3620A53AD400D36FCB /* HeadphoneDetectionUITests.swift */,
+				2A355E3820A53AD400D36FCB /* Info.plist */,
+			);
+			path = HeadphoneDetectionUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2A355E1220A53AD100D36FCB /* HeadphoneDetection */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A355E3B20A53AD400D36FCB /* Build configuration list for PBXNativeTarget "HeadphoneDetection" */;
+			buildPhases = (
+				2A355E0F20A53AD100D36FCB /* Sources */,
+				2A355E1020A53AD100D36FCB /* Frameworks */,
+				2A355E1120A53AD100D36FCB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HeadphoneDetection;
+			productName = HeadphoneDetection;
+			productReference = 2A355E1320A53AD100D36FCB /* HeadphoneDetection.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2A355E2620A53AD400D36FCB /* HeadphoneDetectionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A355E3E20A53AD400D36FCB /* Build configuration list for PBXNativeTarget "HeadphoneDetectionTests" */;
+			buildPhases = (
+				2A355E2320A53AD400D36FCB /* Sources */,
+				2A355E2420A53AD400D36FCB /* Frameworks */,
+				2A355E2520A53AD400D36FCB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2A355E2920A53AD400D36FCB /* PBXTargetDependency */,
+			);
+			name = HeadphoneDetectionTests;
+			productName = HeadphoneDetectionTests;
+			productReference = 2A355E2720A53AD400D36FCB /* HeadphoneDetectionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2A355E3120A53AD400D36FCB /* HeadphoneDetectionUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A355E4120A53AD400D36FCB /* Build configuration list for PBXNativeTarget "HeadphoneDetectionUITests" */;
+			buildPhases = (
+				2A355E2E20A53AD400D36FCB /* Sources */,
+				2A355E2F20A53AD400D36FCB /* Frameworks */,
+				2A355E3020A53AD400D36FCB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2A355E3420A53AD400D36FCB /* PBXTargetDependency */,
+			);
+			name = HeadphoneDetectionUITests;
+			productName = HeadphoneDetectionUITests;
+			productReference = 2A355E3220A53AD400D36FCB /* HeadphoneDetectionUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2A355E0B20A53AD100D36FCB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = Kai;
+				TargetAttributes = {
+					2A355E1220A53AD100D36FCB = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					2A355E2620A53AD400D36FCB = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 2A355E1220A53AD100D36FCB;
+					};
+					2A355E3120A53AD400D36FCB = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 2A355E1220A53AD100D36FCB;
+					};
+				};
+			};
+			buildConfigurationList = 2A355E0E20A53AD100D36FCB /* Build configuration list for PBXProject "HeadphoneDetection" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2A355E0A20A53AD100D36FCB;
+			productRefGroup = 2A355E1420A53AD100D36FCB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2A355E1220A53AD100D36FCB /* HeadphoneDetection */,
+				2A355E2620A53AD400D36FCB /* HeadphoneDetectionTests */,
+				2A355E3120A53AD400D36FCB /* HeadphoneDetectionUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2A355E1120A53AD100D36FCB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A355E2120A53AD300D36FCB /* LaunchScreen.storyboard in Resources */,
+				2A355E1E20A53AD300D36FCB /* Assets.xcassets in Resources */,
+				2A355E1C20A53AD100D36FCB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A355E2520A53AD400D36FCB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A355E3020A53AD400D36FCB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2A355E0F20A53AD100D36FCB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A355E1920A53AD100D36FCB /* ViewController.swift in Sources */,
+				2A355E1720A53AD100D36FCB /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A355E2320A53AD400D36FCB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A355E2C20A53AD400D36FCB /* HeadphoneDetectionTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A355E2E20A53AD400D36FCB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A355E3720A53AD400D36FCB /* HeadphoneDetectionUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2A355E2920A53AD400D36FCB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2A355E1220A53AD100D36FCB /* HeadphoneDetection */;
+			targetProxy = 2A355E2820A53AD400D36FCB /* PBXContainerItemProxy */;
+		};
+		2A355E3420A53AD400D36FCB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2A355E1220A53AD100D36FCB /* HeadphoneDetection */;
+			targetProxy = 2A355E3320A53AD400D36FCB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2A355E1A20A53AD100D36FCB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A355E1B20A53AD100D36FCB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2A355E1F20A53AD300D36FCB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A355E2020A53AD300D36FCB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2A355E3920A53AD400D36FCB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2A355E3A20A53AD400D36FCB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2A355E3C20A53AD400D36FCB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5HF4YR9U6S;
+				INFOPLIST_FILE = HeadphoneDetection/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Kai.HeadphoneDetection;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2A355E3D20A53AD400D36FCB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5HF4YR9U6S;
+				INFOPLIST_FILE = HeadphoneDetection/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Kai.HeadphoneDetection;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2A355E3F20A53AD400D36FCB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5HF4YR9U6S;
+				INFOPLIST_FILE = HeadphoneDetectionTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Kai.HeadphoneDetectionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HeadphoneDetection.app/HeadphoneDetection";
+			};
+			name = Debug;
+		};
+		2A355E4020A53AD400D36FCB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5HF4YR9U6S;
+				INFOPLIST_FILE = HeadphoneDetectionTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Kai.HeadphoneDetectionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HeadphoneDetection.app/HeadphoneDetection";
+			};
+			name = Release;
+		};
+		2A355E4220A53AD400D36FCB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5HF4YR9U6S;
+				INFOPLIST_FILE = HeadphoneDetectionUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Kai.HeadphoneDetectionUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HeadphoneDetection;
+			};
+			name = Debug;
+		};
+		2A355E4320A53AD400D36FCB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5HF4YR9U6S;
+				INFOPLIST_FILE = HeadphoneDetectionUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Kai.HeadphoneDetectionUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HeadphoneDetection;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2A355E0E20A53AD100D36FCB /* Build configuration list for PBXProject "HeadphoneDetection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A355E3920A53AD400D36FCB /* Debug */,
+				2A355E3A20A53AD400D36FCB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2A355E3B20A53AD400D36FCB /* Build configuration list for PBXNativeTarget "HeadphoneDetection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A355E3C20A53AD400D36FCB /* Debug */,
+				2A355E3D20A53AD400D36FCB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2A355E3E20A53AD400D36FCB /* Build configuration list for PBXNativeTarget "HeadphoneDetectionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A355E3F20A53AD400D36FCB /* Debug */,
+				2A355E4020A53AD400D36FCB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2A355E4120A53AD400D36FCB /* Build configuration list for PBXNativeTarget "HeadphoneDetectionUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A355E4220A53AD400D36FCB /* Debug */,
+				2A355E4320A53AD400D36FCB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2A355E0B20A53AD100D36FCB /* Project object */;
+}
