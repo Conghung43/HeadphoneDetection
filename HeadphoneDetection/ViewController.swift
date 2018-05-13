@@ -15,8 +15,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var minus: UIButton!
     @IBOutlet weak var pause: UIButton!
     
-    
+    var timerSet = Timer()
     var player : AVAudioPlayer!
+    var count = 1
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         let volumeView = MPVolumeView(frame: CGRect.zero)
@@ -27,12 +29,15 @@ class ViewController: UIViewController {
                 button.sizeToFit()
             }
         }
+        plus.layer.cornerRadius = 5
+        minus.layer.cornerRadius = 5
+        pause.layer.cornerRadius = 5
         UIApplication.shared.windows.first?.addSubview(volumeView)
         UIApplication.shared.windows.first?.sendSubview(toBack: volumeView)
-        soundBoeing()
+        addSound()
         
     }
-    func soundBoeing () {
+    func addSound () {
         let path = Bundle.main.path(forResource: "CrimsonFly-V.A-3223140", ofType: "mp3")!
         let url = URL(fileURLWithPath: path)
         do {
@@ -47,7 +52,7 @@ class ViewController: UIViewController {
         AVAudioSession.sharedInstance().addObserver(self, forKeyPath: "outputVolume", options: NSKeyValueObservingOptions.new, context: nil)
         do { try AVAudioSession.sharedInstance().setActive(true) }
         catch {
-                        debugPrint("\(error)")
+  //          debugPrint("\(error)")
             
         }
         UIApplication.shared.beginReceivingRemoteControlEvents()
@@ -62,8 +67,7 @@ class ViewController: UIViewController {
         AVAudioSession.sharedInstance().removeObserver(self, forKeyPath: "outputVolume")
         do { try AVAudioSession.sharedInstance().setActive(false) }
         catch {
-            //            debugPrint("\(error)")
-            
+         print("error inside viewWillDisappear")
         }
         
         UIApplication.shared.endReceivingRemoteControlEvents()
@@ -76,31 +80,70 @@ class ViewController: UIViewController {
         guard let key = keyPath else { return }
         switch key {
         case "outputVolume":
-                        guard let dict = change, let temp = dict[NSKeyValueChangeKey.newKey] as? Float, temp != 0.5 else { return }
-                        let systemSlider = MPVolumeView().subviews.first { (aView) -> Bool in
-                            return NSStringFromClass(aView.classForCoder) == "MPVolumeSlider" ? true : false
-                            } as? UISlider
-                        systemSlider?.setValue(0.5, animated: false)
-                        guard systemSlider != nil else { return }
+            guard let dict = change, let temp = dict[NSKeyValueChangeKey.newKey] as? Float, temp != 0.5 else { return }
+            let systemSlider = MPVolumeView().subviews.first { (aView) -> Bool in
+                return NSStringFromClass(aView.classForCoder) == "MPVolumeSlider" ? true : false
+                } as? UISlider
+            systemSlider?.setValue(0.5, animated: false)
+            guard systemSlider != nil else { return }
             print(temp)
             if temp > 0.5 {
-                plus.backgroundColor = UIColor.white
-                minus.backgroundColor = UIColor.black
-                pause.backgroundColor = UIColor.black
+                timerSet = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(changePlusColor), userInfo: nil, repeats: true)
             }
             else {
-                plus.backgroundColor = UIColor.black
-                minus.backgroundColor = UIColor.white
-                pause.backgroundColor = UIColor.black
+                timerSet = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(changeMinusColor), userInfo: nil, repeats: true)
             }
         default: print("another key")
             break
         }
     }
     override func remoteControlReceived(with event: UIEvent?) {
-        //let signal = event!.subtype
-        plus.backgroundColor = UIColor.black
-        minus.backgroundColor = UIColor.black
-        pause.backgroundColor = UIColor.white
+        print("remoteControlReceived was trigger")
+        timerSet = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(changePauseColor), userInfo: nil, repeats: true)
+    }
+    @objc func changePlusColor() {
+        if count == 1 {
+            plus.backgroundColor = UIColor.green
+            count += 1
+        }
+        else if count == 2 {
+            plus.backgroundColor = UIColor.white
+            count += 1
+        }
+        else if count == 3 {
+            plus.backgroundColor = UIColor.green
+            timerSet.invalidate()
+            count = 1
+        }
+    }
+    @objc func changeMinusColor() {
+        if count == 1 {
+            minus.backgroundColor = UIColor.green
+            count += 1
+        }
+        else if count == 2 {
+            minus.backgroundColor = UIColor.white
+            count += 1
+        }
+        else if count == 3 {
+            minus.backgroundColor = UIColor.green
+            timerSet.invalidate()
+            count = 1
+        }
+    }
+    @objc func changePauseColor() {
+        if count == 1 {
+            pause.backgroundColor = UIColor.green
+            count += 1
+        }
+        else if count == 2 {
+            pause.backgroundColor = UIColor.white
+            count += 1
+        }
+        else if count == 3 {
+            pause.backgroundColor = UIColor.green
+            timerSet.invalidate()
+            count = 1
+        }
     }
 }
